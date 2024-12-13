@@ -8,7 +8,7 @@ pages = {
     ],
     "Personal Projects": [
         st.Page("pages/Snake.py", title="Snake", icon="🐍"),
-        st.Page("pages/Dashboarding.py", title="Dashboarding", icon="📊")
+        st.Page("pages/Dashboarding.py", title="Dashboarding and APIs", icon="📊")
     ]
 }
 

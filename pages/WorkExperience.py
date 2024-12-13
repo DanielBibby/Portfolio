@@ -29,7 +29,20 @@ about modern machine learning and data science techniques
 used in industry before completing a short project
 for the Veterinary Medicines Directorate.
 
-My project was a 
+My project tasked me with classifying specialist 
+calf-rearing farms in GB and calculating mortality
+rates for them. With no labelled data I used the
+knowledge of industry experts and movement data of
+cows to engineer an interpretable solution. 
+
+I validated solutions through a round of EDA, 
+looking at farms on the edge case of my model and 
+aggregating data from farms on either side of the
+classification. My work revealed information about
+the cattle industry that will inform decision making
+internally and may be used in published reports.
+
+For this project I used Python, SQLite, Jupyter and Git.
 
 """)
 

@@ -19,31 +19,33 @@ a very useful tool for data scientists.
 
 This page gives me a chance to demonstrate my ability
 to deliver on some valuable uses of Streamlit.
- 
+
+I am also finishing the Snake project from ab ove right now, so check back here in a week so this page will be 
+more built out in the following weeks.
 """)
 
 st.divider()
 
-st.markdown(
-    """
-    <h2 style="font-size:32px;">
-        Dashboarding
-    </h2>
-    """,
-    unsafe_allow_html=True,
-)
+#st.markdown(
+#    """
+#    <h2 style="font-size:32px;">
+#        Dashboarding
+#    </h2>
+#    """,
+#    unsafe_allow_html=True,
+#)
 
-st.markdown("""
-    A dashboard can help businesses gain insights
-    from their data in real time to help make intelligent
-    decisions.
-
-    In this example I will load data from 
-    [Yahoo Finance](https://uk.finance.yahoo.com/) using their
-    publicly accessible API and present some live data. This 
-    methodology is easily applicable to load data from a 
-    database.
-""")
+#st.markdown("""
+#    A dashboard can help businesses gain insights
+#    from their data in real time to help make intelligent
+#    decisions.
+#
+#    In this example I will load data from
+#    [Yahoo Finance](https://uk.finance.yahoo.com/) using their
+#    publicly accessible API and present some live data. This
+#    methodology is easily applicable to load data from a
+#    database.
+#""")
 
 st.divider()
 

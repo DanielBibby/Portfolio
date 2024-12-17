@@ -6,7 +6,7 @@
 
 This project is a Streamlit-based web app designed to show my portfolio and for me to get experience with Streamlit.
 
-The deployed app is available at [INSERT LINK](your_mum.com). This repository can be used to see how the website works.
+The deployed app is available [here](https://danielbibby.streamlit.app). This repository can be used to see how the website works.
 
 ---
 

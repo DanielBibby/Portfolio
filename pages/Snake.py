@@ -23,18 +23,17 @@ st.markdown("""
     This project can be viewed on my GitHub page [here](https://github.com/DanielBibby/Snake).
     
     I used Stable-baselines3, a reinforcement learning library in Python for this project where I created a custom 
-    environment to implement the well-known game. I then manipulated the state representation, performed reward engineering,
-    bias-reduction methods, hyperparameter optimisation and utilised visualisations and other metrics to create an agent that
-    can play Snake autonomously. 
+    environment to implement the well-known game. I have limited resources available to me to train an agent, so this project aim is to create the best possible policy
+    while limiting training to 1 million environment interactions. This is relatively few in a game like Snake where 
+    food is sparse in the environment.
+    s
+    The following techniques are used:
+    - Deep learning
+    - Hyperparameter tuning 
+    - Imitation learning
+    - Model Selection
+    - Reward engineering
+    - State space manipulation
     
-    I have limited resources available to me to train an agent, so this project aim is to create the best possible agent 
-    while limiting training to 1_000_000 environment interactions. This is relatively few in a game like Snake where
-    rewards are received sparsely. 
-    
-    I am still in the process of working on this project. I am currently perofrming a round of hyperparameter tuning to 
-    find an efficient learning and exploration schedule. After this I will implement a full round of training, that is 
-    to say a round of training with all 1_000_000 training steps being used. 
-    
-    The next step will likely be to perform more sophisticated reward engineering and further my bias reduction efforts.
-    I may also implement imitation learning.
+    I am currently wrapping this project up, currently I am implementing imitation learning as the final method.
 """)

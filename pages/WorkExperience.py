@@ -8,7 +8,7 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col2:
-    st.image("static/Logo-Faculty-700x280px-black-rgb.jpg", width = 250)
+    st.image("static/Logo-Faculty-700x280px-black-rgb.jpg", width=250)
 
     if st.button(label="Faculty Website"):
         webbrowser.open("https://faculty.ai/")
@@ -23,7 +23,8 @@ with col1:
         unsafe_allow_html=True,
     )
 
-st.markdown("""
+st.markdown(
+    """
 I completed two weeks of intense training learning 
 about modern machine learning and data science techniques
 used in industry before completing a short project
@@ -44,14 +45,15 @@ internally and may be used in published reports.
 
 For this project I used Python, SQLite, Jupyter and Git.
 
-""")
+"""
+)
 
 st.divider()
 
 col3, col4 = st.columns(2)
 
 with col4:
-    st.image("static/tamarix.png", width = 250)
+    st.image("static/tamarix.png", width=250)
 
     if st.button(label="Tamarix Website"):
         webbrowser.open("https://tamarix.tech/")
@@ -66,7 +68,8 @@ with col3:
         unsafe_allow_html=True,
     )
 
-st.markdown("""
+st.markdown(
+    """
 I was the sole contributor to an automation pipeline
 that used LLMs for structured data extraction from 
 financial PDFs. 
@@ -88,6 +91,7 @@ line with industry changes.
 
 - NLP based ranking system for pages based on fields
 to be extracted.
-""")
+"""
+)
 
 st.divider()

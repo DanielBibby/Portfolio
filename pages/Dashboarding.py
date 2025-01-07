@@ -6,36 +6,41 @@ import seaborn as sns
 
 # Streamlit App Title and Description
 st.title("🌦 Weather Dashboard with Streamlit")
-st.markdown("""
+st.markdown(
+    """
 This application demonstrates how to use Streamlit for:
 - API interaction
 - Data visualisation
 - Creating an interactive dashboard
 
 The app fetches weather data from the Open-Meteo API and displays the information.
-""")
+"""
+)
 st.divider()
 
 # Sidebar for User Input
-st.markdown("""
+st.markdown(
+    """
     #### Location Input
-""")
+"""
+)
 
 location = st.selectbox(
-    'Where would you like to be?',
-   ('Burgess Hill', 'Nepal', 'Miami'))
+    "Where would you like to be?", ("Burgess Hill", "Nepal", "Miami")
+)
 
-if location == 'Burgess Hill':
+if location == "Burgess Hill":
     longitude = -0.1436
     latitude = 50.9542
-elif location == 'Nepal':
+elif location == "Nepal":
     longitude = 84.1240
     latitude = 28.3949
-elif location == 'Miami':
+elif location == "Miami":
     longitude = -80.1918
     latitude = 25.7617
 else:
     st.error("Invalid option")
+
 
 # Fetch Data from Open-Meteo API
 @st.cache_data
@@ -70,7 +75,13 @@ def plot_weather_data(df):
     # Line plot for temperature
     fig, ax = plt.subplots(figsize=(12, 6))
     sns.lineplot(
-        x="time", y="temperature_2m", data=df, color="orange", linewidth=2, label="Temperature (°C)", ax=ax
+        x="time",
+        y="temperature_2m",
+        data=df,
+        color="orange",
+        linewidth=2,
+        label="Temperature (°C)",
+        ax=ax,
     )
     ax.set_title("Temperature", fontsize=16, weight="bold")
     ax.set_xlabel("Day", fontsize=12)
@@ -81,18 +92,18 @@ def plot_weather_data(df):
 
     # Bar plot for precipitation
     fig, ax = plt.subplots(figsize=(12, 6))
-    sns.barplot(
-        x="time", y="precipitation", data=df, color="blue", alpha=0.7, ax=ax
-    )
+    sns.barplot(x="time", y="precipitation", data=df, color="blue", alpha=0.7, ax=ax)
     ax.set_title("Hourly Precipitation", fontsize=16, weight="bold")
     ax.set_xlabel("Day", fontsize=12)
     ax.set_ylabel("Precipitation (mm)", fontsize=12)
 
     # Modify x-axis ticks to show only the start of each day
-    unique_days = df['time'].dt.strftime('%Y-%m-%d').unique()
-    day_start_indices = [df[df['time'].dt.strftime('%Y-%m-%d') == day].index[0] for day in unique_days]
+    unique_days = df["time"].dt.strftime("%Y-%m-%d").unique()
+    day_start_indices = [
+        df[df["time"].dt.strftime("%Y-%m-%d") == day].index[0] for day in unique_days
+    ]
     ax.set_xticks(day_start_indices)
-    ax.set_xticklabels(unique_days, rotation=45, ha='right')
+    ax.set_xticklabels(unique_days, rotation=45, ha="right")
 
     st.pyplot(fig)
 

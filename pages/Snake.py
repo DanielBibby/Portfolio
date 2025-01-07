@@ -6,7 +6,8 @@ st.title("🐍 Using reinforcement learning to play Snake", anchor=False)
 st.divider()
 
 snake_google_url = "https://www.google.com/search?q=snake+google&oq=snake+google&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg0IARAAGIMBGLEDGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEIMjMzOWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-st.markdown(f"""
+st.markdown(
+    f"""
     Snake is a well-known computer game and in this project I
     trained an agent to play this game using reinforcement
     learning methods. If you're unfamiliar with this game
@@ -14,12 +15,14 @@ st.markdown(f"""
 
     The inspiration for this project comes from my interest in reinforcement
     learning and passion for wasting time playing snake. 
-""")
+"""
+)
 
-st.header("My Project", anchor = False)
+st.header("My Project", anchor=False)
 
 snake_github_url = "https://github.com/DanielBibby/Snake"
-st.markdown("""
+st.markdown(
+    """
     This project can be viewed on my GitHub page [here](https://github.com/DanielBibby/Snake).
     
     I used Stable-baselines3, a reinforcement learning library in Python for this project where I created a custom 
@@ -36,4 +39,5 @@ st.markdown("""
     - State space manipulation
     
     I am currently wrapping this project up, currently I am implementing imitation learning as the final method.
-""")
+"""
+)

@@ -19,10 +19,11 @@ st.markdown(
         Dissertation - First
     </h2>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 
-st.write("""
+st.write(
+    """
 My dissertation was a data science project where I used
 high-frequency stock market data to explore the viability 
 of applying 'the signature' of a stock price path in a financial analysis
@@ -35,7 +36,8 @@ the shape of stock price movements.
 I then used applied random forrest classification to price and volatility prediction
 as well as identifying spurious stock price behaviour. Here I used the stock price signature 
 to extract features for use in model building. 
-""")
+"""
+)
 
 st.markdown(
     """
@@ -46,11 +48,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown("""
+st.markdown(
+    """
 - Warwick Statistics Scholarship 2022
 - Academic Excellence Prize 2022
 - Academic Excellence Prize 2021
-""")
+"""
+)
 
 st.markdown(
     """
@@ -61,7 +65,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown("""
+st.markdown(
+    """
 I took modules in the following areas:
 
 - Statistical Learning
@@ -72,7 +77,8 @@ I took modules in the following areas:
 - Mathematical Finance
 
 
-""")
+"""
+)
 
 
 st.divider()

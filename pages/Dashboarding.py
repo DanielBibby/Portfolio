@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Streamlit App Title and Description
-st.title("🌦 Weather Dashboard with Streamlit")
+st.title("🌦 Weather Dashboard")
 st.markdown(
     """
 This application demonstrates how to use Streamlit for:

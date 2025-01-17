@@ -68,11 +68,9 @@ def process_weather_data(api_data):
     return df
 
 
-# Plot Weather Data
 def plot_weather_data(df):
     sns.set_theme(style="darkgrid")
 
-    # Line plot for temperature
     fig, ax = plt.subplots(figsize=(12, 6))
     sns.lineplot(
         x="time",
@@ -97,7 +95,7 @@ def plot_weather_data(df):
     ax.set_xlabel("Day", fontsize=12)
     ax.set_ylabel("Precipitation (mm)", fontsize=12)
 
-    # Modify x-axis ticks to show only the start of each day
+
     unique_days = df["time"].dt.strftime("%Y-%m-%d").unique()
     day_start_indices = [
         df[df["time"].dt.strftime("%Y-%m-%d") == day].index[0] for day in unique_days

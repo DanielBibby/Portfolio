@@ -9,7 +9,7 @@ pages = {
     "Personal Projects": [
         st.Page("pages/Snake.py", title="Snake", icon="🐍"),
         st.Page("pages/Dashboarding.py", title="Dashboarding and APIs", icon="📊"),
-        st.page("pages/NewsSentimentAnalysis.py", title="Company News Sentiment Analysis", icon="📰"),
+        st.Page("pages/NewsSentimentAnalysis.py", title="Company News Sentiment Analysis", icon="📰"),
     ],
 }
 
